@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work · Elijah — Fullstack Engineer</title>
+  <meta name="description" content="Every build, one wall: AI infrastructure, search, wallets, and mobile experiments." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* work-page tile layout tweaks that don't belong to the shared sheet */
+    .work-tab .dot { background: currentColor; }
+  </style>
+</head>
+<body>
+
+  <!-- copy-on-select pill -->
+  <div class="copy-pill" role="button" tabindex="-1" aria-label="Copy selected text">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <rect x="9" y="9" width="11" height="11" rx="2"/>
+      <path d="M5 15V5a2 2 0 0 1 2-2h10"/>
+    </svg>
+    <span class="copy-label">Copy</span>
+  </div>
+
+  <!-- "YOU" cursor tag -->
+  <div class="you-tag" aria-hidden="true">
+    <span class="you-dot"></span>
+    <span class="you-label">YOU</span>
+  </div>
+
+  <!-- ================= header ================= -->
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="logo" href="index.html" aria-label="Home">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="2"  y="2"  width="12" height="6" fill="var(--ink)"/>
+          <rect x="8"  y="13" width="12" height="6" fill="var(--c-pink)"/>
+          <rect x="2"  y="24" width="12" height="6" fill="var(--ink)"/>
+          <rect x="18" y="2"  width="12" height="6" fill="var(--c-blue)"/>
+          <rect x="24" y="13" width="6"  height="6" fill="var(--ink)"/>
+          <rect x="18" y="24" width="12" height="6" fill="var(--c-yellow)"/>
+        </svg>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html" data-spy-link="home">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/></svg></span>
+          HOME
+        </a>
+        <a class="nav-link" href="about.html" data-spy-link="about">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg></span>
+          ABOUT
+        </a>
+        <a class="nav-link is-active" href="work.html" data-spy-link="work">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg></span>
+          WORK
+        </a>
+      </nav>
+
+      <div class="header-right">
+        <span class="chip-wrap">
+          <a class="chip" href="mailto:tomelijah349@gmail.com">EM</a>
+          <span class="chip-tip">TOMELIJAH349@GMAIL.COM</span>
+        </span>
+        <span class="chip-wrap">
+          <a class="chip" href="https://github.com/Elydeboss" target="_blank" rel="noopener">GH</a>
+          <span class="chip-tip">GITHUB.COM/ELYDEBOSS</span>
+        </span>
+        <span class="chip-wrap">
+          <a class="chip" href="https://www.linkedin.com/in/elijah" target="_blank" rel="noopener">LI</a>
+          <span class="chip-tip">IN/ELIJAH</span>
+        </span>
+        <a class="contact-btn" href="index.html#contact" data-spy-link="contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m3 11 18-8-8 18-2.5-7.5L3 11Z"/></svg>
+          CONTACT
+        </a>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Toggle menu">
+        <span class="menu-label">MENU</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu">
+      <nav aria-label="Mobile">
+        <a href="index.html" data-spy-link="home">
+          <span class="w-5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/></svg></span>
+          HOME
+        </a>
+        <a href="about.html" data-spy-link="about">
+          <span class="w-5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg></span>
+          ABOUT
+        </a>
+        <a class="is-active" href="work.html" data-spy-link="work">
+          <span class="w-5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg></span>
+          WORK
+        </a>
+      </nav>
+      <div class="mm-social">
+        <a class="chip" href="mailto:tomelijah349@gmail.com">EM</a>
+        <a class="chip" href="https://github.com/Elydeboss" target="_blank" rel="noopener">GH</a>
+        <a class="chip" href="https://www.linkedin.com/in/elijah" target="_blank" rel="noopener">LI</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+
+    <!-- top scroll ruler -->
+    <div class="ruler is-sticky" aria-hidden="true">
+      <div class="ruler-track"></div>
+    </div>
+
+    <main style="padding-bottom: 112px;">
+      <!-- hero -->
+      <section class="works-hero">
+        <p class="hand-heading reveal">the full archive</p>
+        <svg style="width:110px;height:40px;margin-top:4px;" viewBox="0 0 110 40" aria-hidden="true"><path d="M8 6c30 4 66 10 88 26"/><path d="M80 34l16-2-6-14"/></svg>
+        <h1 class="works-title reveal">ALL&nbsp;WORKS</h1>
+        <p class="work-note reveal">
+          Six builds: AI infrastructure, search, a crypto wallet, and a running set of interaction studies.
+          Swap in your own screenshots — every tile is marked as an image slot.
+        </p>
+      </section>
+
+      <!-- gallery grid -->
+      <div class="works-grid">
+
+        <!-- ═══════════ 📷 IMAGE SLOT work-1 · Relay ═══════════
+             WHAT: a screenshot or (ideally) a short screen-recording of this project
+             HOW:  drop the file in assets/, then set src="assets/your-file.png"
+                   and DELETE data-placeholder="true" from the figure + img
+             SIZE: landscape 16:10, ~1200×750px or larger. A <video> works too —
+                   keep the same classes as the <img>. -->
+        <a class="work-tile" href="#" id="p1" data-hide-cursor>
+          <span class="work-tab"><span class="dot" aria-hidden="true"></span>RELAY</span>
+          <div class="work-frame-pad">
+            <figure class="work-frame media-slot" data-slot="work-1" data-label="Relay — dashboard screenshot or recording (16:10, 1200×750+)" data-placeholder="true">
+              <img src="assets/proj-relay.svg" alt="Relay dashboard placeholder" data-placeholder="true" />
+            </figure>
+          </div>
+          <span class="see-circle" aria-hidden="true">See</span>
+        </a>
+
+        <!-- ═══════════ 📷 IMAGE SLOT work-2 · Inbox Sleuth ═══════════ -->
+        <a class="work-tile" href="#" id="p2" data-hide-cursor>
+          <span class="work-tab"><span class="dot" aria-hidden="true"></span>INBOX SLEUTH</span>
+          <div class="work-frame-pad">
+            <figure class="work-frame media-slot" data-slot="work-2" data-label="Inbox Sleuth — search UI screenshot or recording (16:10)" data-placeholder="true">
+              <img src="assets/proj-sleuth.svg" alt="Inbox Sleuth search placeholder" data-placeholder="true" />
+            </figure>
+          </div>
+          <span class="see-circle" aria-hidden="true">See</span>
+        </a>
+
+        <!-- ═══════════ 📷 IMAGE SLOT work-3 · Vaultline ═══════════
+             PHONE PROJECT: replace the whole .phone-stage div with three
+             portrait screenshots if you have them (aspect ~406:863), or keep
+             the CSS phones and just delete data-placeholder below. -->
+        <a class="work-tile" href="#" id="p3" data-hide-cursor>
+          <span class="work-tab"><span class="dot" aria-hidden="true"></span>VAULTLINE</span>
+          <div class="work-frame-pad">
+            <div class="work-frame media-slot phones" data-slot="work-3" data-label="Vaultline — 3 phone screenshots (portrait ~406×863) or keep CSS phones" data-placeholder="true">
+              <div class="phone-stage" aria-hidden="true">
+                <div class="phone"><span class="notch"></span>
+                  <div class="screen" style="background:#f5f2ea">
+                    <span class="ui-bar" style="top:9%;left:12%;right:12%;height:4%;background:#d9d4c5"></span>
+                    <span class="ui-card" style="top:18%;left:10%;right:10%;height:22%;background:#e3a92f"></span>
+                    <span class="ui-card" style="top:44%;left:10%;width:36%;height:14%;background:#fff;border:1.5px solid #141414"></span>
+                    <span class="ui-card" style="top:44%;right:10%;width:36%;height:14%;background:#fff;border:1.5px solid #141414"></span>
+                    <span class="ui-card" style="top:62%;left:10%;right:10%;height:8%;background:#a6d9bb"></span>
+                    <span class="ui-card" style="top:74%;left:10%;right:10%;height:8%;background:#a6d9bb"></span>
+                  </div>
+                </div>
+                <div class="phone"><span class="notch"></span>
+                  <div class="screen" style="background:#141414">
+                    <span class="ui-bar" style="top:9%;left:14%;right:14%;height:4%;background:#333"></span>
+                    <span class="ui-card" style="top:17%;left:10%;width:38%;height:20%;background:#5fbee6"></span>
+                    <span class="ui-card" style="top:17%;right:10%;width:38%;height:20%;background:#d8365d"></span>
+                    <span class="ui-card" style="top:40%;left:10%;width:38%;height:20%;background:#efdca4"></span>
+                    <span class="ui-card" style="top:40%;right:10%;width:38%;height:20%;background:#5fb57f"></span>
+                    <span class="ui-card" style="top:64%;left:10%;width:38%;height:20%;background:#a6d9bb"></span>
+                    <span class="ui-card" style="top:64%;right:10%;width:38%;height:20%;background:#f5f2ea"></span>
+                  </div>
+                </div>
+                <div class="phone"><span class="notch"></span>
+                  <div class="screen" style="background:#f5f2ea">
+                    <span class="ui-bar" style="top:10%;left:30%;right:30%;height:4%;background:#d9d4c5"></span>
+                    <span class="ui-card" style="top:22%;left:12%;right:12%;height:18%;background:#5fbee6"></span>
+                    <span class="ui-card" style="top:46%;left:12%;right:12%;height:7%;background:#fff;border:1.5px solid #141414"></span>
+                    <span class="ui-card" style="top:57%;left:12%;right:12%;height:7%;background:#fff;border:1.5px solid #141414"></span>
+                    <span class="ui-card" style="top:72%;left:22%;right:22%;height:10%;background:#141414"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="see-circle" aria-hidden="true">See</span>
+        </a>
+
+        <!-- ═══════════ 📷 IMAGE SLOT work-4 · Motion Lab ═══════════
+             PHONE PROJECT: same options as Vaultline above. Ideal content:
+             screen-recordings of your interactions. -->
+        <a class="work-tile" href="#" id="p4" data-hide-cursor>
+          <span class="work-tab"><span class="dot" aria-hidden="true"></span>MOTION LAB</span>
+          <div class="work-frame-pad">
+            <div class="work-frame media-slot phones" data-slot="work-4" data-label="Motion Lab — 3 phone recordings/screenshots (portrait) or keep CSS phones" data-placeholder="true">
+              <div class="phone-stage" aria-hidden="true">
+                <div class="phone"><span class="notch"></span>
+                  <div class="screen" style="background:#141414">
+                    <span class="ui-card" style="top:14%;left:12%;right:12%;height:30%;background:#a6d9bb"></span>
+                    <span class="ui-card" style="top:48%;left:12%;right:12%;height:30%;background:#333"></span>
+                    <span class="ui-pill" style="bottom:8%;left:50%;width:26%;height:5%;transform:translateX(-50%);background:#a6d9bb"></span>
+                  </div>
+                </div>
+                <div class="phone"><span class="notch"></span>
+                  <div class="screen" style="background:#f5f2ea">
+                    <span class="ui-bar" style="top:10%;left:12%;right:12%;height:4%;background:#d9d4c5"></span>
+                    <span class="ui-card" style="top:20%;left:12%;right:12%;height:34%;background:#5fbee6"></span>
+                    <span class="ui-card" style="top:60%;left:12%;right:30%;height:6%;background:#141414"></span>
+                    <span class="ui-card" style="top:70%;left:12%;right:45%;height:6%;background:#d9d4c5"></span>
+                    <span class="ui-card" style="top:80%;left:12%;right:38%;height:6%;background:#d9d4c5"></span>
+                  </div>
+                </div>
+                <div class="phone"><span class="notch"></span>
+                  <div class="screen" style="background:#d8365d">
+                    <span class="ui-pill" style="top:20%;left:16%;width:18%;height:4%;background:rgba(255,255,255,.75)"></span>
+                    <span class="ui-pill" style="top:30%;left:60%;width:14%;height:4%;background:rgba(255,255,255,.6)"></span>
+                    <span class="ui-pill" style="top:44%;left:30%;width:12%;height:4%;background:rgba(255,255,255,.8)"></span>
+                    <span class="ui-pill" style="top:36%;left:44%;width:10%;height:4%;background:rgba(255,255,255,.5)"></span>
+                    <span class="ui-card" style="bottom:12%;left:14%;right:14%;height:22%;background:#141414"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="see-circle" aria-hidden="true">See</span>
+        </a>
+
+        <!-- ═══════════ 📷 IMAGE SLOT work-5 · Papertrail ═══════════ -->
+        <a class="work-tile" href="#" id="p5" data-hide-cursor>
+          <span class="work-tab"><span class="dot" aria-hidden="true"></span>PAPERTRAIL</span>
+          <div class="work-frame-pad">
+            <figure class="work-frame media-slot" data-slot="work-5" data-label="Papertrail — analytics dashboard screenshot (16:10)" data-placeholder="true">
+              <img src="assets/proj-relay.svg" alt="Papertrail placeholder" data-placeholder="true" />
+            </figure>
+          </div>
+          <span class="see-circle" aria-hidden="true">See</span>
+        </a>
+
+        <!-- ═══════════ 📷 IMAGE SLOT work-6 · Nightmarket ═══════════ -->
+        <a class="work-tile" href="#" id="p6" data-hide-cursor>
+          <span class="work-tab"><span class="dot" aria-hidden="true"></span>NIGHTMARKET</span>
+          <div class="work-frame-pad">
+            <figure class="work-frame media-slot" data-slot="work-6" data-label="Nightmarket — storefront screenshot (16:10)" data-placeholder="true">
+              <img src="assets/proj-sleuth.svg" alt="Nightmarket placeholder" data-placeholder="true" />
+            </figure>
+          </div>
+          <span class="see-circle" aria-hidden="true">See</span>
+        </a>
+
+      </div>
+    </main>
+
+    <!-- ================= footer ================= -->
+    <footer class="site-footer">
+      <div class="comment-card reveal">
+        <p class="cc-label">Comment</p>
+        <hr />
+        <div class="cc-row">
+          <span class="cc-avatar" aria-hidden="true">E</span>
+          <div>
+            <p class="cc-name">Elijah</p>
+            <p class="cc-text">Open to contract work, full-time roles, and interesting conversations about hard systems problems.</p>
+            <span class="cc-badge"><span aria-hidden="true">⚡</span> 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="big-plate">
+        <svg class="plate-grid" aria-hidden="true" preserveAspectRatio="none">
+          <defs>
+            <pattern id="plate-lines-work" width="48" height="48" patternUnits="userSpaceOnUse">
+              <path d="M0 48L48 0" fill="none" stroke="rgba(20,20,20,0.12)" stroke-width="1"/>
+              <path d="M-12 12L12 -12" fill="none" stroke="rgba(20,20,20,0.12)" stroke-width="1"/>
+              <path d="M36 60L60 36" fill="none" stroke="rgba(20,20,20,0.12)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#plate-lines-work)"/>
+        </svg>
+        <div class="plate-inner">
+          <a class="contact-plate" href="mailto:tomelijah349@gmail.com">
+            <span class="corner" aria-hidden="true">
+              <span style="top:0;left:0"></span><span style="top:0;right:0"></span>
+              <span style="bottom:0;left:0"></span><span style="bottom:0;right:0"></span>
+            </span>
+            <span class="plate-tile" aria-hidden="true">
+              <span class="roller"></span>
+              <span class="diamond"></span>
+              <span class="glyph">»</span>
+            </span>
+            <span class="plate-text">CONTACT</span>
+            <span class="plate-tile" aria-hidden="true">
+              <span class="roller"></span>
+              <span class="diamond"></span>
+              <span class="glyph">»</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bar">
+        <p class="copyright">© <span class="year">2026</span> ELIJAH</p>
+        <div class="footer-links">
+          <a href="mailto:tomelijah349@gmail.com">tomelijah349@gmail.com</a>
+          <a href="https://github.com/Elydeboss" target="_blank" rel="noopener">GITHUB</a>
+          <a href="https://x.com/Ely_deBoss" target="_blank" rel="noopener">X (TWITTER)</a>
+          <a href="https://www.linkedin.com/in/elijah" target="_blank" rel="noopener">LINKEDIN</a>
+        </div>
+      </div>
+
+      <div class="ruler is-bottom" aria-hidden="true">
+        <div class="ruler-track"></div>
+      </div>
+    </footer>
+
+  </div><!-- /.page -->
+
+  <script src="js/main.js"></script>
+  <script>document.querySelectorAll(".year").forEach(function (el) { el.textContent = new Date().getFullYear(); });</script>
+</body>
+</html>

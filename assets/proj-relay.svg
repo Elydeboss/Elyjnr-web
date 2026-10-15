@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="ui-monospace, monospace">
+  <defs>
+    <linearGradient id="rl-glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5fbee6" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#5fbee6" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="rl-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".05"/>
+    </pattern>
+  </defs>
+
+  <!-- window -->
+  <rect width="1600" height="1000" fill="#101418"/>
+  <rect width="1600" height="1000" fill="url(#rl-grid)"/>
+  <rect width="1600" height="1000" fill="url(#rl-glow)"/>
+
+  <!-- browser chrome -->
+  <rect width="1600" height="72" fill="#161b21"/>
+  <circle cx="44" cy="36" r="9" fill="#d8365d"/>
+  <circle cx="74" cy="36" r="9" fill="#e3a92f"/>
+  <circle cx="104" cy="36" r="9" fill="#5fb57f"/>
+  <rect x="150" y="16" width="700" height="40" rx="20" fill="#0c0f13"/>
+  <text x="182" y="42" fill="#8fa3b0" font-size="20">https://relay.api/v1/gateway</text>
+  <rect x="1466" y="22" width="90" height="28" rx="6" fill="#5fbee6" fill-opacity=".18"/>
+  <text x="1486" y="41" fill="#5fbee6" font-size="17" font-weight="bold">PROD</text>
+
+  <!-- sidebar -->
+  <rect x="0" y="72" width="330" height="928" fill="#12161b"/>
+  <line x1="330" y1="72" x2="330" y2="1000" stroke="#ffffff" stroke-opacity=".06"/>
+  <rect x="28" y="104" width="34" height="34" fill="#5fbee6"/>
+  <text x="76" y="128" fill="#eef4f2" font-size="22" font-weight="bold" font-family="Instrument Sans, sans-serif">relay</text>
+  <g font-size="19" fill="#7d919e">
+    <rect x="28" y="190" width="274" height="52" rx="8" fill="#5fbee6" fill-opacity=".14"/>
+    <rect x="46" y="209" width="18" height="14" fill="#5fbee6"/>
+    <text x="82" y="223" fill="#cfe9f6">Overview</text>
+    <rect x="46" y="279" width="18" height="14" fill="#33404a"/>
+    <text x="82" y="293">Providers</text>
+    <rect x="46" y="339" width="18" height="14" fill="#33404a"/>
+    <text x="82" y="353">Routes</text>
+    <rect x="46" y="399" width="18" height="14" fill="#33404a"/>
+    <text x="82" y="413">Usage</text>
+    <rect x="46" y="459" width="18" height="14" fill="#33404a"/>
+    <text x="82" y="473">Logs</text>
+    <rect x="46" y="519" width="18" height="14" fill="#33404a"/>
+    <text x="82" y="533">Keys</text>
+  </g>
+  <rect x="28" y="900" width="274" height="66" rx="10" fill="#0c0f13"/>
+  <circle cx="62" cy="933" r="14" fill="#5fbee6"/>
+  <text x="90" y="928" fill="#cfe9f6" font-size="17">gateway-eu-1</text>
+  <text x="90" y="952" fill="#5fb57f" font-size="15">● healthy</text>
+
+  <!-- header row -->
+  <text x="392" y="160" fill="#eef4f2" font-size="30" font-weight="bold" font-family="Instrument Sans, sans-serif">Request volume</text>
+  <rect x="1300" y="126" width="240" height="48" rx="8" fill="#0c0f13" stroke="#2a353e"/>
+  <text x="1326" y="157" fill="#7d919e" font-size="18">Last 24 hours ▾</text>
+
+  <!-- stat cards -->
+  <g>
+    <rect x="392" y="196" width="380" height="128" rx="12" fill="#12161b" stroke="#232d36"/>
+    <text x="424" y="240" fill="#7d919e" font-size="17">REQUESTS TODAY</text>
+    <text x="424" y="296" fill="#eef4f2" font-size="44" font-weight="bold" font-family="Instrument Sans, sans-serif">10,482</text>
+    <text x="608" y="296" fill="#5fb57f" font-size="20">▲ 12%</text>
+
+    <rect x="796" y="196" width="380" height="128" rx="12" fill="#12161b" stroke="#232d36"/>
+    <text x="828" y="240" fill="#7d919e" font-size="17">UPTIME 90D</text>
+    <text x="828" y="296" fill="#eef4f2" font-size="44" font-weight="bold" font-family="Instrument Sans, sans-serif">99.9%</text>
+
+    <rect x="1200" y="196" width="240" height="128" rx="12" fill="#12161b" stroke="#232d36"/>
+    <text x="1232" y="240" fill="#7d919e" font-size="17">P95 LATENCY</text>
+    <text x="1232" y="296" fill="#eef4f2" font-size="44" font-weight="bold" font-family="Instrument Sans, sans-serif">212ms</text>
+  </g>
+
+  <!-- chart -->
+  <rect x="392" y="356" width="1048" height="320" rx="12" fill="#12161b" stroke="#232d36"/>
+  <g stroke="#232d36">
+    <line x1="424" y1="440" x2="1408" y2="440"/>
+    <line x1="424" y1="510" x2="1408" y2="510"/>
+    <line x1="424" y1="580" x2="1408" y2="580"/>
+    <line x1="424" y1="650" x2="1408" y2="650"/>
+  </g>
+  <path d="M424 636 L520 604 L616 618 L712 560 L808 576 L904 522 L1000 540 L1096 486 L1192 500 L1288 448 L1384 430 L1408 424"
+        fill="none" stroke="#5fbee6" stroke-width="5" stroke-linecap="round"/>
+  <path d="M424 636 L520 604 L616 618 L712 560 L808 576 L904 522 L1000 540 L1096 486 L1192 500 L1288 448 L1384 430 L1408 424 L1408 660 L424 660 Z"
+        fill="#5fbee6" fill-opacity=".12"/>
+  <circle cx="1288" cy="448" r="8" fill="#5fbee6" stroke="#101418" stroke-width="3"/>
+  <rect x="1180" y="392" width="188" height="40" rx="8" fill="#0c0f13" stroke="#2a353e"/>
+  <text x="1200" y="418" fill="#cfe9f6" font-size="16">14:00 · 2,104 req</text>
+
+  <!-- provider rows -->
+  <g font-size="18">
+    <rect x="392" y="708" width="1048" height="76" rx="10" fill="#12161b" stroke="#232d36"/>
+    <rect x="424" y="736" width="16" height="16" rx="4" fill="#5fbee6"/>
+    <text x="460" y="752" fill="#eef4f2" font-family="Instrument Sans, sans-serif" font-weight="bold">openai · gpt-5.1</text>
+    <text x="780" y="752" fill="#7d919e">8,120 req</text>
+    <rect x="960" y="730" width="86" height="28" rx="14" fill="#5fb57f" fill-opacity=".16"/>
+    <text x="978" y="750" fill="#5fb57f" font-size="15">200 OK</text>
+    <text x="1320" y="752" fill="#7d919e">98ms</text>
+
+    <rect x="392" y="800" width="1048" height="76" rx="10" fill="#12161b" stroke="#232d36"/>
+    <rect x="424" y="828" width="16" height="16" rx="4" fill="#d8365d"/>
+    <text x="460" y="844" fill="#eef4f2" font-family="Instrument Sans, sans-serif" font-weight="bold">anthropic · claude</text>
+    <text x="780" y="844" fill="#7d919e">1,904 req</text>
+    <rect x="960" y="822" width="86" height="28" rx="14" fill="#5fb57f" fill-opacity=".16"/>
+    <text x="978" y="842" fill="#5fb57f" font-size="15">200 OK</text>
+    <text x="1320" y="844" fill="#7d919e">142ms</text>
+
+    <rect x="392" y="892" width="1048" height="76" rx="10" fill="#12161b" stroke="#232d36"/>
+    <rect x="424" y="920" width="16" height="16" rx="4" fill="#e3a92f"/>
+    <text x="460" y="936" fill="#eef4f2" font-family="Instrument Sans, sans-serif" font-weight="bold">cohere · embed-v3</text>
+    <text x="780" y="936" fill="#7d919e">458 req</text>
+    <rect x="960" y="914" width="86" height="28" rx="14" fill="#e3a92f" fill-opacity=".16"/>
+    <text x="984" y="934" fill="#e3a92f" font-size="15">429 → ↻</text>
+    <text x="1320" y="936" fill="#7d919e">89ms</text>
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="ui-monospace, monospace">
+  <rect width="1600" height="1000" fill="#f4f2ec"/>
+
+  <!-- browser chrome -->
+  <rect width="1600" height="72" fill="#e9e6dd"/>
+  <circle cx="44" cy="36" r="9" fill="#d8365d"/>
+  <circle cx="74" cy="36" r="9" fill="#e3a92f"/>
+  <circle cx="104" cy="36" r="9" fill="#5fb57f"/>
+  <rect x="150" y="16" width="700" height="40" rx="20" fill="#ffffff"/>
+  <text x="182" y="42" fill="#8a857a" font-size="20">https://sleuth.app/search</text>
+
+  <!-- app header -->
+  <rect y="72" width="1600" height="96" fill="#ffffff"/>
+  <line x1="0" y1="168" x2="1600" y2="168" stroke="#e2ded2"/>
+  <rect x="56" y="96" width="34" height="34" fill="#141414"/>
+  <text x="104" y="121" fill="#141414" font-size="24" font-weight="bold" font-family="Instrument Sans, sans-serif">sleuth</text>
+
+  <!-- search bar -->
+  <rect x="56" y="208" width="1200" height="76" rx="14" fill="#ffffff" stroke="#141414" stroke-width="3"/>
+  <circle cx="102" cy="246" r="16" fill="none" stroke="#141414" stroke-width="4"/>
+  <line x1="114" y1="258" x2="130" y2="274" stroke="#141414" stroke-width="4" stroke-linecap="round"/>
+  <text x="156" y="256" fill="#141414" font-size="24">deploy outage friday</text>
+  <rect x="1196" y="228" width="44" height="36" rx="8" fill="#5fbee6"/>
+  <path d="M1210 246h20m0 0l-8-8m8 8l-8 8" stroke="#141414" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <rect x="1300" y="214" width="150" height="34" rx="17" fill="none" stroke="#141414" stroke-width="2.5"/>
+  <circle cx="1326" cy="231" r="7" fill="#d8365d"/>
+  <text x="1342" y="238" fill="#141414" font-size="17">exact</text>
+  <rect x="1300" y="256" width="150" height="34" rx="17" fill="#efdca4"/>
+  <text x="1322" y="280" fill="#141414" font-size="17">semantic ✓</text>
+
+  <!-- filter chips -->
+  <g font-size="17">
+    <rect x="56" y="320" width="130" height="40" rx="20" fill="#141414"/>
+    <text x="80" y="346" fill="#ffffff">All 1,284</text>
+    <rect x="202" y="320" width="150" height="40" rx="20" fill="#ffffff" stroke="#d8d3c6"/>
+    <text x="226" y="346" fill="#5c574d">#eng 612</text>
+    <rect x="368" y="320" width="170" height="40" rx="20" fill="#ffffff" stroke="#d8d3c6"/>
+    <text x="392" y="346" fill="#5c574d">#incidents 88</text>
+    <rect x="554" y="320" width="140" height="40" rx="20" fill="#ffffff" stroke="#d8d3c6"/>
+    <text x="578" y="346" fill="#5c574d">#deploys 214</text>
+    <rect x="710" y="320" width="130" height="40" rx="20" fill="#ffffff" stroke="#d8d3c6"/>
+    <text x="734" y="346" fill="#5c574d">#dm 370</text>
+  </g>
+
+  <!-- results -->
+  <g>
+    <rect x="56" y="396" width="1488" height="168" rx="14" fill="#ffffff" stroke="#e2ded2"/>
+    <rect x="88" y="428" width="56" height="56" rx="28" fill="#5fbee6"/>
+    <text x="106" y="464" fill="#141414" font-size="22" font-weight="bold">M.K</text>
+    <text x="172" y="444" fill="#141414" font-size="21" font-weight="bold" font-family="Instrument Sans, sans-serif">Maya K.</text>
+    <text x="280" y="444" fill="#a39d8f" font-size="17">#incidents · Fri 14:02</text>
+    <text x="172" y="486" fill="#3d3a33" font-size="21">the <tspan fill="#141414" font-weight="bold" background="#efdca4"><tspan fill="#141414" font-weight="bold" bg-red="x"> </tspan></tspan><tspan fill="#141414" font-weight="bold">deploy</tspan> finished at 13:58, but the <tspan fill="#141414" font-weight="bold">outage</tspan> alerts kept firing until</text>
+    <text x="172" y="522" fill="#3d3a33" font-size="21">we rolled back the <tspan fill="#141414" font-weight="bold">friday</tspan> migration. root cause in thread ↓</text>
+    <rect x="1300" y="428" width="200" height="40" rx="20" fill="#efdca4"/>
+    <text x="1326" y="454" fill="#141414" font-size="17">jump to thread ↗</text>
+
+    <rect x="56" y="588" width="1488" height="168" rx="14" fill="#ffffff" stroke="#e2ded2"/>
+    <rect x="88" y="620" width="56" height="56" rx="28" fill="#a6d9bb"/>
+    <text x="102" y="656" fill="#141414" font-size="22" font-weight="bold">J.D</text>
+    <text x="172" y="636" fill="#141414" font-size="21" font-weight="bold" font-family="Instrument Sans, sans-serif">Jonas D.</text>
+    <text x="292" y="636" fill="#a39d8f" font-size="17">#eng · Fri 14:19</text>
+    <text x="172" y="678" fill="#3d3a33" font-size="21">confirming: <tspan fill="#141414" font-weight="bold">outage</tspan> resolved 14:15. adding a canary step before every <tspan fill="#141414" font-weight="bold">deploy</tspan></text>
+    <text x="172" y="714" fill="#3d3a33" font-size="21">from now on.</text>
+
+    <rect x="56" y="780" width="1488" height="168" rx="14" fill="#ffffff" stroke="#e2ded2"/>
+    <rect x="88" y="812" width="56" height="56" rx="28" fill="#efdca4"/>
+    <text x="108" y="848" fill="#141414" font-size="22" font-weight="bold">R.O</text>
+    <text x="172" y="828" fill="#141414" font-size="21" font-weight="bold" font-family="Instrument Sans, sans-serif">Rin O.</text>
+    <text x="284" y="828" fill="#a39d8f" font-size="17">#deploys · Fri 15:47</text>
+    <text x="172" y="870" fill="#3d3a33" font-size="21">postmortem doc is up. action items tagged, <tspan fill="#141414" font-weight="bold">outage</tspan> runbook updated with the</text>
+    <text x="172" y="906" fill="#3d3a33" font-size="21">rollback checklist.</text>
+    <rect x="1300" y="812" width="200" height="40" rx="20" fill="#a6d9bb"/>
+    <text x="1326" y="838" fill="#141414" font-size="17">open postmortem</text>
+  </g>
+</svg>

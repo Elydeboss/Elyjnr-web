@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#e9e7e2"/>
+  <rect x="40" y="40" width="520" height="520" fill="none" stroke="#c9c4b6" stroke-width="3" stroke-dasharray="14 12"/>
+  <g fill="none" stroke="#a8a294" stroke-width="8" stroke-linecap="round">
+    <circle cx="300" cy="235" r="70"/>
+    <path d="M170 470c20-95 80-135 130-135s110 40 130 135"/>
+  </g>
+  <g fill="#a8a294">
+    <rect x="236" y="500" width="128" height="12" rx="6"/>
+    <rect x="266" y="524" width="68" height="12" rx="6"/>
+  </g>
+  <text x="300" y="120" text-anchor="middle" font-family="monospace" font-size="26" fill="#8a857a" letter-spacing="4">PORTRAIT GOES HERE</text>
+</svg>
